@@ -359,7 +359,7 @@ function AIMessage({ content, foldedMap, setFoldedMap, msgKey }: { content: stri
           const lines = codeStr.split('\n');
           const isFolded = foldedMap[codeKey] !== false && lines.length > 5;
           const displayCode = isFolded ? lines.slice(0, 5).join('\n') + '\n...' : codeStr;
-          if (inline) {
+          if (inline || lines.length === 1) {
             return <code className={className} {...props}>{children}</code>;
           }
           return (
