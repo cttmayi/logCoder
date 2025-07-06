@@ -19,10 +19,6 @@ if not exist "codemirror-server" (
 REM 启动后端服务器
 echo 📡 启动 FastAPI 后端服务器...
 cd codemirror-server
-if not exist "venv" (
-    python -m venv venv
-)
-call venv\Scripts\activate.bat
 pip install -r requirements.txt >nul 2>&1
 start "FastAPI Backend" python main.py
 cd ..

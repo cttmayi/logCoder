@@ -60,10 +60,6 @@ start.bat
 1. **启动后端服务器**
 ```bash
 cd codemirror-server
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# 或
-venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 python main.py
 ```

@@ -31,13 +31,7 @@
 
 ## 安装和运行
 
-1. 创建虚拟环境（推荐）：
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# 或
-venv\Scripts\activate  # Windows
-```
+1. 创建虚拟环境（推荐）
 
 2. 安装依赖：
 ```bash
